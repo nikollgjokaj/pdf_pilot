@@ -112,3 +112,12 @@ To use the HandoutAssistant class:
         The method returns the answer from GPT-3 and the ID of the segment that generated the answer.
 
 Note: Before using the class, you need to configure the API keys for AI21 and OpenAI. You also need to install the "fitz", "requests", "transformers", and "openai" libraries.
+
+## Redis Version
+
+We also have a Redis Version: 
+We used Redis as a caching mechanism to store the processed PDF data. The HandoutAssistant class has a redis_client attribute, which is created in the constructor by initializing a Redis client with the host, port, and database information. 
+
+The process_pdf method of the HandoutAssistant class takes a pdf_path parameter and first checks if the data for that PDF is already cached in Redis by calling the get method on the Redis client with the pdf_path key. If the data is cached, it returns the cached data. If the data is not cached, it calls the PDFHandler.pdf_to_text method to extract the text from the PDF and then calls the AI21Segmentation.segment_text method to segment the text. 
+
+It then assigns page numbers and IDs to the segments using the assign_page_numbers_and_ids_to_segments method and returns the resulting questions_data. Before returning the questions_data, it also stores it in Redis using the set method on the Redis client with the pdf_path key and the questions_data value.
