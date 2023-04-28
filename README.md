@@ -8,7 +8,6 @@ In this README file, you'll find detailed information on how to install and use 
 
 
 
-
 ![](https://github.com/nixknameee/pdf_pilot/blob/main/pdfpilot/public/ezgif.com-video-to-gif.gif)
 
                                                               First Steps
@@ -59,6 +58,8 @@ That's it! You should now have PDFPilot installed on your computer and be ready 
 After starting the Webpage you have to start the server.py with the command.
 
 > pyhton3 server.py
+
+![](https://github.com/nixknameee/pdf_pilot/blob/main/pdfpilot/public/IMG_0232.png)
 
 ## server.py
 
