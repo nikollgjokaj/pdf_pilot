@@ -4,11 +4,11 @@ Welcome to our project! In this project, we have developed a Prototype for the l
 
 ## Project Repositories
 
-Our project is segmented into three principal components: Frontend, Backend, and Full Stack. You can access the corresponding repositories via the links provided below:
+Our project is segmented into three principal components: Frontend, Backend, and Full Stack.
 
 - Frontend by [MrGrif0n](https://github.com/MrGrif0n)
 - Backend by [admineral](https://github.com/admineral)
-- Full Stack development by [nixknameee](https://github.com/nixknameee)
+- Full Stack by [nixknameee](https://github.com/nixknameee)
 
 ## PDF Pilot Development
 
